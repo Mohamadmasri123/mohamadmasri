@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Flower Shop-tripoli</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="final.css"> 
+        <img src="logo2.jpg" alt="logo" width="250" />
+  
+   <script>
+        function openCity(evt, cityName) {
+
+     var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+
+
+        function myFunction() {
+
+  var radioButtons = document.getElementsByName("title");
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked){
+        var c=parseInt(radioButtons[i].value);
+        p+=c;}
+    }
+        
+        
+    </script>
+    
+    </head> 
+    
+    <body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Type')">Type</button>
+   <button class="tablinks" onclick="openCity(event, 'order')">order</button>
+ <button class="tablinks" onclick="openCity(event, 'Address')">Address</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <img src="Home1.jpg" alt=""/>
+  <p>Flowers zone boutique is a flower shop located in tipoli main road we
+            do create fabilous bouquets flower arangement wedding
+            diners birthdays engagement new forn we are a wholale and retail fresh 
+            cut flowers and pot plants suppluier outr aim is to proivd an compredhisive 
+            canbelabra candles shels robons and one of the largest silk floers sections.</p>
+</div>
+  <div id="Type" class="tabcontent">
+         
+         <p>  <img src="f1.jpg" alt="Rose "  width="150"/>rose 
+       <img src="f2.jpg" alt="phalaenopsis orchid white or color "  width="150"/>phalaenopsis orchid white or color
+       <img src="f3.jpg" alt="bonesi"/>bonesi
+       
+       <img src="f4.jpg" alt="multicolor rose "  width="150"/>multicolor rose
+       <img src="f5.jpg" alt="cake rose"  width="150"/>cake rose
+       <img src="f6.jpg" alt="azelea"  width="150" />azelea
+   </p>
+     </div>
+  
+  
+  <div id="order" class="tabcontent">
+  
+  <form> <h2>Make an order  </h2>
+        type of flower :      
+  <input type="radio" name="title" >Rose <br>
+  <input type="radio" name="title" >orchid  <br>
+  <input type="radio" name="title" >  bonesi<br>
+    <input type="radio" name="title" > cake rose<br>
+      <input type="radio" name="title" > multicolor rose<br>
+        <input type="radio" name="title" > azelea<br>
+</div>
+        <div>
+ <p id="text" ></p>
+<button onclick="myFunction()">order</button>
+ <input type="radioButtons" id="myCheck" onclick="myFunction()">
+ 
+</div>
+    
+              
+
+<div id="Address" class="tabcontent">
+    <h3>About us</h3>
+    <b> Flower shop
+        tripoli,main road-lebanon<br>
+       tel:+96171851893/+96176523325<br>
+       time:mon to sat :08:00-20:00<br>
+  <img src="d1.html" alt="multicolor rose "  width="150"/>
+       
+    </body>
+</html>
